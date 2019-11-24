@@ -1,169 +1,192 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 section#first {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
 }
 .main-title {
-    padding-top: 27%;
-    letter-spacing: 3.8px;
-    font-size: 3.5rem;
-    color: white;
+  padding-top: 27%;
+  letter-spacing: 3.8px;
+  font-size: 3.5rem;
+  color: white;
 }
 @media (max-width: 768px) {
-    .main-title {
-        padding-top: 80%;
-    }
+  .main-title {
+    padding-top: 80%;
+  }
 }
 @media (max-width: 992px) {
-    .main-title {
-        padding-top: 50%;
-        font-size: 2.5rem;
-    }
+  .main-title {
+    padding-top: 50%;
+    font-size: 2.5rem;
+  }
 }
 .arrow-down {
-    position: absolute; top: 80%; left: 50%;
-    font-size: 2.3rem;
-    color: white;
-    transition: transform 500ms;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: 2.3rem;
+  color: white;
+  transition: transform 500ms;
 }
 #first:hover .arrow-down {
-    transform: translateY(15px) scale(1.2)
+  transform: translateY(15px) scale(1.2);
 }
 #mainNavbar .nav-link {
-    color: white
+  color: white;
 }
 #mainNavbar .nav-item:hover .nav-link {
-    color: #ffffffc9
+  color: #ffffffc9;
 }
 .portfolio-element {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    border-radius: 20px;
-    transition: transform 400ms;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 240px;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  border-radius: 20px;
+  transition: transform 400ms;
 }
-.portfolio-element:hover{
-    transform: scale(1.02)
+.portfolio-element:hover {
+  transform: scale(1.02);
 }
 .portfolio-text {
-    padding: 10px;  
-    font-size: 1.5rem;
-    color: #fff;  
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
 }
 #portfolio h1 {
-    color: #303030;
+  color: #303030;
 }
 #portfolio a {
-    font-size: 1rem;
-    color: white;
+  font-size: 1rem;
+  color: white;
 }
 #portfolio a:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-.about h1{
-    color: white;
+.about h1 {
+  color: white;
+  text-align: center;
+}
+.about .about-text {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .about {
+    padding-top: 18%;
+  }
+  .about .about-text {
+    display: none;
+  }
+  .about h1 {
+    transform: translateY(60px);
+    transition: transform 400ms;
+  }
+  .about.container:hover h1 {
+    transform: translateY(0);
+  }
+  .about.container:hover .about-text {
+    display: block;
+  }
+  .about .adv {
+    transform: translateY(65px);
     text-align: center;
-}
-.about .about-text{
-    color: white;
-    font-size: 1.1rem;
-    text-align: center;
-}
-@media (min-width: 1200px){
-    .about{
-        padding-top: 18%;
-    }
-    .about .about-text{
-        display: none;
-    }
-    .about h1{
-        transform: translateY(60px);
-        transition: transform 400ms;
-    }
-    .about.container:hover h1{
-        transform: translateY(0)
-    }
-    .about.container:hover .about-text{
-        display: block;
-    }
-    .about .adv{
-        transform: translateY(65px);
-        text-align: center;
-        margin-top: -25px ;
-        color: #fff;
-    }
-    .about.container:hover .adv{
-        display: none;
-    }
-}
-.footer-arrow{
-    position: absolute; top: 85%; left: 49%;
-    color: white;
-    font-weight: 300;
-    font-size: 1.3rem;
-    transition: transform 500ms;
-}
-#first:hover .footer-arrow{
-    transform: translateY(10px);
-}
-@media (max-width: 1200px){
-    .about{
-        padding-top: 18%;
-    }
-    .about .adv {
-        display: none;
-    }
-}
-@media (max-width: 768px){
-    .about{
-        padding-top: 40%;
-    }
-}
-@media (max-width: 992px){
-    .footer-arrow{
-        left: 45%;
-    }
-}
-footer{
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    background-repeat: no-repeat;
-    padding: 2rem 0 0.8rem 0;
-    color: #fff
-}
-footer p{
-    margin: 0;
-}
-footer a{
-    color: white;
-}
-footer a:hover{
-    color: white;
-    text-decoration: none;
-}
-footer i{
-    color: #ff004c;
-}
-footer .social-icon{
-    padding-top: 0.5rem;
-}
-footer .social-icon i{
+    margin-top: -25px;
     color: #fff;
-    font-size: 1.3rem;
-    padding-left: 10px;
+  }
+  .about.container:hover .adv {
+    display: none;
+  }
 }
-footer .social-icon-about i{
-    /* color: #fff; */
-    font-size: 1.3rem;
-    padding-left: 10px;
-    padding-top: 5px;
+.footer-arrow {
+  position: absolute;
+  top: 85%;
+  left: 49%;
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+  transition: transform 500ms;
+}
+#first:hover .footer-arrow {
+  transform: translateY(10px);
+}
+@media (max-width: 1200px) {
+  .about {
+    padding-top: 18%;
+  }
+  .about .adv {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding-top: 40%;
+  }
+}
+@media (max-width: 992px) {
+  .footer-arrow {
+    left: 45%;
+  }
+}
+footer {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  background-repeat: no-repeat;
+  padding: 3rem 0 3rem 0;
+  color: #fff;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer i.fa-heart {
+  color: #ff004c;
+  transform: scale(1);
+  animation: hearth 0.8s infinite;
+}
+footer .social-icon {
+  padding-top: 0.5rem;
+}
+footer .social-icon i {
+  color: #fff;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+footer .social-icon-about i {
+  /* color: #fff; */
+  font-size: 1.3rem;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 .navbar.scrolled {
-        background: #49A5FE;
-    transition: background 500ms;
+  background: #49a5fe;
+  transition: background 500ms;
+}
+
+@keyframes hearth {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
