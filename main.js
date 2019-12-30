@@ -4,7 +4,7 @@ function getGitHubRepos(user) {
     .then(res => {
       console.log(res);
       res.forEach(repo => {
-        $("#repository").append(`<div class="col-md-4 pt-5">
+        $("#repository").append(`<div class="pt-5">
         <div class="portfolio-element text-center py-3">
           <div class="portfolio-text">
             <h2>${repo.name}</h2>
@@ -26,3 +26,17 @@ function getGitHubRepos(user) {
 }
 
 getGitHubRepos("RiccardoCherchi");
+
+var typed = new Typed("#typed", {
+  strings: ["Full stack developer", "Riccardo Cherchi"],
+  smartBackspace: true, // Default value
+  typeSpeed: 60,
+  backSpeed: 25
+});
+
+$(function() {
+  $(document).scroll(function() {
+    var $nav = $("#mainNavbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});

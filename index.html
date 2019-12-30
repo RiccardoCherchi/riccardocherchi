@@ -83,11 +83,11 @@
     </section>
 
     <section id="portfolio">
-      <div class="container py-5">
+      <div class="fluid-container py-5">
         <h1 class="text-center pb-5">Portfolio</h1>
-        <div id="repository" class="row">
-          <div class="col-md-4 pt-5">
-            <div class="portfolio-element text-center py-3">
+        <div id="repository">
+           <div class="pt-5">
+            <div class="portfolio-element text-center">
               <div class="portfolio-text">
                 <h2>pizzeria Elio site</h2>
                 <p>
@@ -151,21 +151,5 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="main.js"></script>
-    <script>
-      var typed = new Typed("#typed", {
-        strings: ["Full stack developer", "Riccardo Cherchi"],
-        smartBackspace: true, // Default value
-        typeSpeed: 45,
-        backSpeed: 25
-      });
-    </script>
-    <script>
-      $(function() {
-        $(document).scroll(function() {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
   </body>
 </html>
